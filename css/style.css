@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body{
+    height: 100vh;
+}
+
+header{
+    z-index: 99;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+nav{
+    height: 2cm;
+}
+
+.hero-container{
+    height: 100vh;
+}
+
+._blur_bg{
+    height: 100%;
+    pointer-events: none;
+    top: 0px;
+    left: 0px;
+}
+
+.hero_content{
+    z-index: 1;
+}
+
+.call_to_action{
+    width: 5cm;
+}
