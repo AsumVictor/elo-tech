@@ -18,12 +18,13 @@ nav{
     height: 2cm;
 }
 
-.cirle{
-    height: 1.4cm;
-    width: 1.4cm;
-    border-radius: 0.7cm;
+.circle{
+    height: 53px;
+    width: 53px;
+    border-radius: 26.5px;
     border: 2px solid white;
     z-index: 99;
+    transition: 30ms;
 }
 
 .hero-container{
