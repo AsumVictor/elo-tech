@@ -18,8 +18,16 @@ nav{
     height: 2cm;
 }
 
+.cirle{
+    height: 1.4cm;
+    width: 1.4cm;
+    border-radius: 0.7cm;
+    border: 2px solid white;
+    z-index: 99;
+}
+
 .hero-container{
-    height: 100vh;
+    padding: 1cm;
 }
 
 ._blur_bg{
@@ -33,6 +41,67 @@ nav{
     z-index: 1;
 }
 
+
 .call_to_action{
-    width: 5cm;
+    width: 6cm;
+}
+
+.hero_image_holder{
+    height: 100%;
+}
+
+.hero_image{
+  top: 0px;
+  left: 0px;
+}
+
+.loader {
+    width: 48px;
+    height: 78px;
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 255, 255);
+    margin: auto;
+    border-radius: 50% 50% 50% 50% / 25% 25% 25% 25%;
+  }
+  .loader::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    animation: scrollDown 1.5s linear infinite;
+  }
+  @keyframes scrollDown {
+    0% {
+      top: 15px;
+      height: 4px;
+      opacity: 1;
+    }
+    33% {
+      top: 15px;
+      height: 40px;
+    }
+    66% {
+      top: 50px;
+      height: 10px;
+      opacity: 1;
+    }
+    100% {
+      top: 56px;
+      height: 4px;
+      opacity: 0;
+    }
+  }
+
+/* Media query goes here */
+@media (min-width: 779px) {
+    .hero-container{
+        height: 100vh;
+    }
+    
 }
