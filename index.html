@@ -30,7 +30,7 @@
     </div>
      <!-- Hero section -->
      <section id="hero">
-        <div class="hero-container w-full bg-black relative flex
+        <div class="hero-container w-full bg-black relative flex rellax
                     items-center justify-around flex-col flex-wrap 
                     md:flex-row">
             <img src="images/background burry 2.png" 
@@ -39,7 +39,8 @@
 
             <div class="hero_content w-full flex flex-col items-center justify-center p-1 mt-10
                         md:w-5/12 md:mt-0">
-                <h1 class="text-white text-5xl font-bold text-center mt-10">
+                <h1 class="rellax text-white text-5xl font-bold text-center mt-10"
+                    data-rellax-speed="2">
                     ELO-TECH
                 </h1>
                 <p class="text-white px-3 text-center mt-10
@@ -50,17 +51,20 @@
                      your online shopping experience as easy and enjoyable as 
                      possible.
                 </p>
-                <button class="call_to_action p-3 bg-lightBlue rounded-3xl font-bold mt-10 
+                <button class="call_to_action rellax p-3 bg-lightBlue rounded-3xl font-bold mt-10 
                                flex flex-row justify-center items-center space-x-2
-                               hover:bg-darkBlue">
+                               hover:bg-darkBlue"
+                        data-rellax-speed="-1">
                    <span> Shop Now!</span><svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#000"/></svg>
                 </button>
             </div>
 
             <div class="hero_content w-full p-2 flex-col mt-20
-                        md:w-5/12 ">
+                        md:w-5/12">
             
-                <div class="hero_image_holder p-1 w-full">
+                <div class="hero_image_holder rellax p-1 w-full"
+                     data-rellax-speed="-2"
+                     >
 
                      <img src="images/apple 1.png" 
                      alt="hero left image 1"
@@ -72,8 +76,9 @@
 
             </div>
 
-            <div class="w-full mt-20
-                        md:-mt-20">
+            <div class="w-full mt-20 rellax
+                        md:-mt-20"
+                 data-rellax-speed="5">
                 <div class="loader"></div>
             </div>
 
@@ -95,5 +100,9 @@
 <script src="Js/GsapScrolltriger.js"></script>
 <script src="Js/Gsap.js"></script>
 <script src="Js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+<script>
+    const rellax = new Rellax('.rellax')
+</script>
 </body>
 </html>
